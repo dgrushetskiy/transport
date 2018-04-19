@@ -30,9 +30,9 @@ public class Start extends Application {
             Platform.runLater(new Runnable() {
                 @Override
                 public void run() {
-                    LOG.info("Inicializando o contexto do Spring...");
+                    LOG.info("Инициализация контекста Spring ...");
                     context = new AnnotationConfigApplicationContext(AppConfig.class);
-                    LOG.info("Contexto do Spring inicializado");
+                    LOG.info("Исходный контекст");
                 }
             });
         } catch (Exception e) {
@@ -42,7 +42,7 @@ public class Start extends Application {
 
     @Override
     public void start(final Stage stage) throws Exception {
-        LOG.info("Starting Application");
+        LOG.info("Запуск приложения");
 
         LOG.debug("Loading FXML for main view from: {}", EnumPath.HOME.getPath());
 
